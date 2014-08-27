@@ -68,10 +68,10 @@ def front_x(words):
 # [(2, 2), (1, 3), (3, 4, 5), (1, 7)]
 # Pista: utilizar una función personalizada key= para extraer el último
 # elemento de una tupla.
-def sort_last(tuples):
-    # +++tu código aquí+++
-    return
 
+def sort_last(tuples):
+    tupla = sorted(tuples, key=lambda tuples : tuples[-1])
+    return tupla
 
 # Función simple test() utilizada en main() para mostrar
 # lo que retorna cada función vs lo que debería retornar.
