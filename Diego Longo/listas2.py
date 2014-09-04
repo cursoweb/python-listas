@@ -15,7 +15,6 @@
 # así [1, 2, 2, 3] retorna [1, 2, 3]. Pueden crear una nueva lista o
 # modificar la lista enviada.
 def remove_adjacent(nums):
-    # +++tu código aquí+++
     return
 
 
@@ -24,8 +23,9 @@ def remove_adjacent(nums):
 # Idealmente, la solución debería funcionar en tiempo "linear", haciendo una sola
 # pasada de ambas listas.
 def linear_merge(list1, list2):
-    # +++tu código aquí+++
-    return
+    lista_fusion = list1 + list2
+    lista_fusion.sort()
+    return lista_fusion
 
 # Nota: la solución de arriba es interesante, pero desafortunadamente.pop(0)
 # no es constante en el tiempo con la implementación estándar de listas, así
